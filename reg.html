@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title> Регистрация </title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Регистрация">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	</head>
+	<body><br><br><br><br>
+		<div align="center">
+			<form >
+				<fieldset  style="width: 400px; font-family: 'Ubuntu', sans-serif">
+					<h1 align="center">Регистрация</h1>
+					<table>
+						<tbody>
+							<tr>
+								<th align="left" style="padding: 7px">
+									<label for="login">Введите логни:</label>
+								</th>
+								<th>
+									<input id="login" type="text" placeholder="Логин" minlength="5">
+								</th>
+							</tr>
+							<tr>
+								<th align="left" style="padding: 7px">
+									<label for="email">Введите почту:</label>
+								</th>
+								<th>
+									<input id="email" type="email" placeholder="Почтовый ящик">
+								</th>
+							</tr>
+							<tr>
+								<th align="left" style="padding: 7px">
+									<label for="password">Введите пароль:</label>
+								</th>
+								<th>
+									<input id="password" type="password" placeholder="Пароль" maxlength="9">
+								</th>
+							</tr>
+							<tr>
+								<th align="left" style="padding: 7px">
+									<label for="password2">Повторите пароль:</label>
+								</th>
+								<th>
+									<input id="password2" type="password" placeholder="Повторно пароль" maxlength="9">
+								</th>
+							</tr>
+						</tbody>
+					</table><br>
+					<p>Выберите ваш пол:
+						<label>
+							<input name="gender" type="radio"> Акула
+						</label>
+						<label>
+							<input name="gender" type="radio"> Акул
+						</label>
+					</p><br>
+					<label>Боитесь ли вы акул:
+						<select>
+							<option> Да, боюсь</option>
+							<option> Несильно </option>
+							<option> Конечно не боюсь! </option>
+						</select>
+					</label><br><br><br>
+					<label for="image">Выберите изображение профиля:<br><br>
+						<input type="file" name="image" accept="image/*" placeholder="Изображание профиля" required>
+					</label><br><br>
+					<label>
+						<input name="message[]" type="checkbox"> Согласен с обработкой персональных данных
+					</label><br><br>
+					<label>
+						<input name="message[]" type="checkbox"> Буду любить и беречь свою акулу
+					</label><br><br>
+					<label>
+						<input name="message[]" type="checkbox"> Хочу вступить в Клуб
+					</label><br><br>
+					<label>
+						<input type="submit" value="SHARK-SHARK!">
+					</label>
+				</fieldset>
+			</form>
+			<div>
+				<a href="main.html" class="onmain"> На главную </a>
+			</div>
+		</div>
+	</body>
+</html>

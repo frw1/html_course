@@ -1,0 +1,260 @@
+body {
+	margin: 0;
+	height: 100vh;
+	background-image: url(../img/back.jpg);
+	background-attachment: fixed; 
+}
+
+/*.aligncenter {
+	display: block;
+	width: 960px;
+}*/
+
+/*положение верхней панели с кнопками*/
+header {
+	align: center;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+main {
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+
+.ubuntu-text {
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	line-height: 1.4em;
+}
+
+/*настройки списка верхнего меню*/
+.main-menu {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+
+.main-menu_li {
+	margin: 0;
+	padding: 5px 15px;
+	background-color: rgba(164, 221, 233, 0.7);
+	border: 0;
+	border-radius: 17px;
+	list-style: none;
+	position: relative;
+	box-sizing: border-box;
+	transition: background-color 0.3s linear;
+}
+
+.main-menu_li:hover {
+	background-color:  rgba(34, 146, 169, 0.9);
+}
+
+.sub-menu {
+	position: absolute;
+    display: none;
+	
+	margin: 0;
+	margin-left: -4px;
+	padding: 0;
+	list-style: none;
+}
+
+.sub-menu > li {
+	margin: 2px;
+	padding: 5px 15px;
+	position: relative;
+	left: 0;
+	background-color: rgba(164, 221, 233, 0.7);
+	border: 0;
+	border-radius: 0 15px 15px 15px;
+	list-style: none;
+	box-sizing: border-box;
+	transition: background-color 0.3s linear;
+}
+
+.sub-menu > li:hover {
+	background-color:  rgba(34, 146, 169, 0.9);
+}
+
+.main-menu > li:hover .sub-menu {
+	display: block;
+	padding: 5px;
+	border: 0;
+    border-radius: 0 15px 15px 15px;
+    font-size: 15px;
+}
+
+header a {
+	display: block;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 15pt;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+.onmain {
+	padding: 0px 15px 10px 15px;
+    border: 0;
+    border-radius: 0 0 15px 15px;
+	text-decoration: none; 
+	font-size: 20pt;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	background-color:  rgba(164, 221, 233, 0.7);	
+}
+
+/* Окно входа/Ссылка на регистацию */
+.form:target {
+    display: block;
+    position: fixed;
+    top: 22vh;
+	left: 44.5vw;
+}
+
+.form {
+    display: none;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+fieldset {
+    border: 0;
+	width: auto;
+	border-radius: 15px;
+	background-color:  rgba(34, 146, 169, 0.9);
+	font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+fieldset a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+fieldset p {
+    margin: 0;
+}
+
+/* contacts */
+.contact-inform {
+	display: flex;
+	width: 900px;
+	margin: 20px 0;
+	padding: 15px;
+	background-color: rgb(225, 225, 235, 0.8);
+	border: 0;
+	border-radius: 35px;
+}
+
+.contact-inform_block {
+	display: inline-block;
+	margin: 15px;
+	padding: 10px;
+	height: auto;
+	width: 270px;
+}
+
+.contact-inform_item {
+	margin: 0;
+	padding: 0;
+	width: 270px;
+	text-align: center;
+	font-size: 1em;
+	font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+.maps {
+	height: 480px;
+	width: 960px;
+}
+
+/* price */
+.price-inform {
+	display: flex;
+	width: 900px;
+	height: auto;
+	margin: 20px 0;
+	padding: 15px;
+	background-color: rgb(225, 225, 235, 0.8);
+	border: 0;
+	border-radius: 35px;
+}
+
+.price-inform_block {
+	display: inline-block;
+	margin: 15px;
+	padding: 10px;
+	width: 400px;
+}
+
+.contact-inform_item {
+	margin: 0;
+	padding: 0;
+	width: 270px;
+	text-align: center;
+	font-size: 1em;
+	font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+.pic {
+	border: 0;
+	border-radius: 25px;
+}
+
+.button-buy {
+	background-color:  rgba(164, 221, 233);
+	padding: 5px 10px;
+	transition: background-color color 0,5s lineer;
+}
+
+.button-buy:hover {
+	background-color:  rgba(34, 146, 169);
+	color: white;
+}
+
+/* event */
+.event-inform {
+	display: flex;
+	width: 900px;
+	height: auto;
+	margin: 20px 0;
+	padding: 15px;
+	background-color: rgb(225, 225, 235, 0.8);
+	border: 0;
+	border-radius: 35px;
+}
+
+.event-inform_block {
+	display: inline-block;
+	margin: 15px;
+	padding: 10px;
+	width: 400px;
+}
+
+.main-inform {
+	display: flex;
+	width: 900px;
+	height: auto;
+	margin: 20px 0;
+	padding: 15px;
+	background-color: rgb(225, 225, 235, 0.8);
+	border: 0;
+	border-radius: 35px;
+}
+
+.main-inform_block {
+	display: inline-block;
+	align: center;
+	margin: 15px;
+	padding: 0;
+	width: 860px;
+}

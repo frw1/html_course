@@ -1,0 +1,147 @@
+body {
+	margin: 0;
+	background-image: url(../img/back.jpg);
+	background-attachment: fixed;
+}
+
+.aligncenter {
+	display: block;
+	justify-items: center;
+	width: 960px;
+}
+
+/*положение верхней панели с кнопками*/
+header {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	align-items: center;
+	justify-items: center;
+}
+
+main {
+	margin-top: 200px;
+	margin-bottom: 30px;
+	align-items: center;
+	justify-items: center;
+}
+
+/*настройки списка верхнего меню*/
+header > ul {
+	padding: 5px;
+	list-style-type: none;
+	display: flex;
+	font-size: 1.4em;
+}
+
+/*стилизация пунктов меню на верхней панели*/
+header li {
+	margin: 10px;
+	padding: 5px 15px;
+	border: 0;
+	border-radius: 17px;
+	display: inline;
+	background:  rgba(164, 221, 233, 0.7);
+}
+
+/*отображение пунктов меню и подменю при наведении курсора*/
+header li:hover {
+	background:  rgba(34, 146, 169, 0.9);
+}
+
+/*отображение подменю по умолчанию*/
+.submenu {
+	position: absolute;
+    display: none;
+}
+
+.mainmenu > li:hover .submenu {
+	display: block;
+	padding: 5px;
+/*    border: 0;
+    border-radius: 0 15px 15px 15px;*/
+    font-size: 15px;
+}
+
+
+/*стилизация пунктов подменю на верхней панели*/
+.submenu li {
+	display: block;
+	margin: 3px;
+	padding: 5px 15px;
+	border: 0;
+	border-radius: 0 15px 15px 15px;
+	position: relative;
+}
+
+/*
+
+/*.li_submenu:hover {
+	background:  rgba(34, 146, 169, 0.9);
+}
+
+.mainmenu > li:hover > .submenu {
+  display: block;
+  position: fixed;
+}
+
+*/
+
+header a {
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 15pt;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+.onmain {
+	padding: 0px 15px 10px 15px;
+    border: 0;
+    border-radius: 0 0 15px 15px;
+	text-decoration: none; 
+	font-size: 20pt;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	background:  rgba(164, 221, 233, 0.7);	
+}
+
+
+
+/* Окно входа/Ссылка на регистацию */
+.form:target {
+    display: block;
+    position: fixed;
+    top: 35vh;  
+}
+
+.form {
+    display: none;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+
+fieldset {
+    border: 0;
+	border-radius: 15px;
+	background:  rgba(34, 146, 169, 0.9);
+}
+
+fieldset a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+fieldset p {
+    margin: 0;
+}
+
+fieldset a:hover {
+	background:  rgba(34, 146, 169, 0.9);
+    color: black;
+}

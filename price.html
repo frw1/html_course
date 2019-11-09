@@ -1,0 +1,152 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>Курсовая работа HTML/CSS</title>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+		<div align="center">
+			<header>
+				<nav align="center" style="width: 960px">
+					<ul class="main-menu">
+						<li class="main-menu_li"><a href="main.html" target="_self" id="mainpage" class="">Главная</a></li>
+						<li class="main-menu_li"><a href="events.html" target="_self" id="eventspage" class="">Мероприятия</a>
+							<ul class="sub-menu">
+								<li><a href="events.html#films" target="_self" class="">Кино</a></li>
+								<li><a href="events.html#cartoons" target="_self" class="">Мультфильмы</a></li>
+								<li><a href="events.html#books" target="_self" class="">Книги</a></li>
+								<li><a href="events.html#sleep" target="_self" class="">Сон</a></li>
+							</ul>
+						</li>
+						<li class="main-menu_li"><a href="price.html" target="_self" id="pricepage" class="">Цены</a>
+							<ul class="sub-menu">
+								<li><a href="price.html#minishark" target="_self" id="minishark" class="">Маленький Акул</a></li>
+								<li><a href="price.html#bigshark" target="_self" id="bigshark" class="">Большой Акул</a></li>
+							</ul>
+						</li>
+						<li class="main-menu_li"><a href="contacts.html" target="_self" id="contactspage" class="">Контакты</a></li>
+						<li class="main-menu_li"><a href="#form" target="_self" id="enterpage" class="">Войти</a></li>
+					</ul>
+				<nav>
+			</header>
+			<main class="ubuntu-text">
+				<div class="price-inform">
+					<div class="price-inform_block">
+						<img src="img/big.jpg" width="400px" height="400px" alt="BIG SHARK">
+						<div>
+							<p>
+								<strong style="font-size: 1.4em">Мягкая игрушка, акула, 100 см</strong>
+								<br>
+								<br>
+								Эта большая, но абсолютно безопасная синяя акула позволит вам познакомиться с загадочным подводным миром. 
+								Она плавает очень далеко, ныряет глубоко и издалека услышит биение вашего сердца.
+								Все мягкие игрушки хороши для веселья, игр и шалостей. Кроме того, они надежны и безопасны.
+								<br>
+							</p>
+							<p>
+								<h1>1 499 ₽</h1>
+							</p>
+						</div>
+					</div>
+					<div class="price-inform_block">
+						<img src="img/small.jpg" width="400px" height="400px" alt="SMALL SHARK">
+						<div>
+							<p>
+								<strong style="font-size: 1.4em">Мягкая игрушка, акула, 55 см</strong>
+								<br>
+								<br>
+								Эта маленькая голубая акула с рождения умеет плавать и глубоко нырять. Полезный навык, ведь для роста ей 
+								нужно есть много кальмаров, лобстеров и креветок. Все мягкие игрушки хороши для веселья, игр и шалостей. 
+								Кроме того, они надежны и безопасны.
+								<br>
+							</p>
+							<p>
+								<h1>599 ₽</h1>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="price-inform">
+					<div class="price-inform_block">
+						<p>
+							<strong style="font-size: 1.4em">Оформление заказа:</strong>
+						</p>
+						<table>
+							<tbody>
+								<tr>
+									<th align="left">
+										<label>Выберите акулу:</label>
+									</th>
+									<th align="left">
+										<select>
+											<option> Большая акула, 100 см </option>
+											<option> Маленькая акула, 55 см </option>
+										</select>
+									</th>
+								</tr>
+								<tr>
+									<th align="left">
+										<label>Выберите количество:</label>
+									<th align="left">
+										<select>
+											<option> 1 шт </option>
+											<option> 2 шт </option>
+											<option> 3 шт </option>
+											<option> 4 шт </option>
+										</select>
+									</th>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<label>
+							<input class="button-buy" type="submit" value="Оформить заказ">
+						</label>
+						<p>
+						* не более четырех акул в одни руки
+						</p>
+					</div>
+					<div class="price-inform_block" style="text-align: left">
+						<p style="text-align: center">
+							<strong style="font-size: 1.4em">Инструкции по уходу:</strong>
+						</p>
+						<p>
+						Машинная стирка 40°С, деликатный режим.
+						<br>
+						Не отбеливать.
+						<br>
+						Машинная сушка, низкотемпературный режим.
+						<br>
+						Не гладить.
+						<br>
+						Не подвергать химической чистке.
+						</p>
+					</div>
+				</div>
+			</main>
+			<div class="login">
+				<div id="form" class="form">
+					<form action="#"> 
+						<fieldset style="width: auto; font-family: 'Ubuntu', sans-serif; background:  rgba(34, 146, 169, 0.9)">
+							<h1 style="margin: 5px; font-size: 35px">Вход</h1>
+							<table>
+								<tr>
+									<td><input id="email" type="email"  placeholder="Почтовый адрес" required></input></td>
+								</tr>
+								<tr>
+									<td><input id="pass" type="password" placeholder="Пароль" required></input></td>
+								</tr>
+							</table><br>
+							<p><input type="submit" value="Вход"></p><br>
+							<p><a href="reg.html">Регистрация</a></p><br> 
+							<p><a href="#"> X-- ЗАКРЫТЬ --X</a></p>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
